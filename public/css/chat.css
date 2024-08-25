@@ -1,0 +1,294 @@
+/* Color Schemes */
+:root {
+    --background-color: #121212;
+    --border-color: #3c3c3c;
+    --text-color: #e0e0e0;
+    --placeholder-color: #a0a0a0;
+    --primary-color: #375a7f;
+    --primary-hover-color: #2b4764;
+    --primary-hover-border-color: #28415b;
+    --card-background-color: #1e1e1e;
+    --card-border-color: #2c2c2c;
+    --card-header-background-color: #252525;
+    --card-header-border-color: #2c2c2c;
+    --card-header-text-color: #b0b0b0;
+    --nav-link-color: #b0b0b0;
+    --nav-link-active-color: #ffffff;
+    --nav-link-active-background-color: #1e1e1e;
+    --nav-link-active-border-color: #2c2c2c;
+    --scrollbar-track-color: #1e1e1e;
+    --scrollbar-thumb-color: #3c3c3c;
+    --scrollbar-thumb-border-color: #1e1e1e;
+    --navbar-background-color: #1a1a1a;
+    --navbar-text-color: #e0e0e0;
+    --chatbox-background-color: #f8f9fa;
+    --chatbox-text-color: #333;
+    --chatbox-strong-color: #2980b9;
+    --chatbox-success-color: #27ae60;
+    --chatbox-small-color: #7f8c8d;
+    --chatbox-delivery-status-color: #e67e22;
+    --chatbox-seen-status-color: #3498db;
+    --chatbox-dark-background-color: #2c2c2c;
+    --chatbox-dark-text-color: #e0e0e0;
+    --chatbox-dark-strong-color: #4a90e2;
+    --chatbox-dark-success-color: #2ecc71;
+    --chatbox-dark-small-color: #888;
+    --chatbox-dark-delivery-status-color: #f39c12;
+    --chatbox-dark-seen-status-color: #3498db;
+
+    /* Add border color */
+    /* --border-color: #8d99aeff;
+    --card-border-color: #8d99aeff;
+    --card-header-border-color: #8d99aeff;
+    --nav-link-active-border-color: #8d99aeff; */
+    
+}
+
+
+/* Red color scheme */
+:root.red-mode {
+    --background-color: #2b0000;
+    --border-color: #660000;
+    --text-color: #ffffff;
+    --placeholder-color: #b30000;
+    --primary-color: #990000;
+    --primary-hover-color: #cc0000;
+    --primary-hover-border-color: #e60000;
+    --card-background-color: #330000;
+    --card-border-color: #660000;
+    --card-header-background-color: #4d0000;
+    --card-header-border-color: #800000;
+    --card-header-text-color: #ffffff;
+    --nav-link-color: #ff6666;
+    --nav-link-active-color: #ff9999;
+    --nav-link-active-background-color: #660000;
+    --nav-link-active-border-color: #990000;
+    --scrollbar-track-color: #330000;
+    --scrollbar-thumb-color: #660000;
+    --scrollbar-thumb-border-color: #800000;
+    --navbar-background-color: #4d0000;
+    --navbar-text-color: #ffffff;
+    --chatbox-background-color: #f8f9fa;
+    --chatbox-text-color: #ffffff;
+    --chatbox-strong-color: #ff6666;
+    --chatbox-success-color: #ff9999;
+    --chatbox-small-color: #b30000;
+    --chatbox-delivery-status-color: #ff6666;
+    --chatbox-seen-status-color: #ff9999;
+    --chatbox-dark-background-color: #1a0000;
+    --chatbox-dark-text-color: #ffcccc;
+    --chatbox-dark-strong-color: #ff6666;
+    --chatbox-dark-success-color: #ff9999;
+    --chatbox-dark-small-color: #b30000;
+    --chatbox-dark-delivery-status-color: #ff6666;
+    --chatbox-dark-seen-status-color: #ff9999;
+}
+
+/* Dark Blue Schemes */
+:root.blue-mode {
+    --background-color: #1a1a2e;
+    --border-color: #4a4e69;
+    --text-color: #f0f0f0;
+    --placeholder-color: #b8b8b8;
+    --primary-color: #5f85db;
+    --primary-hover-color: #4a6fc7;
+    --primary-hover-border-color: #3e5fad;
+    --card-background-color: #24243e;
+    --card-border-color: #3c3c5c;
+    --card-header-background-color: #2a2a4a;
+    --card-header-border-color: #3c3c5c;
+    --card-header-text-color: #c0c0c0;
+    --nav-link-color: #c0c0c0;
+    --nav-link-active-color: #ffffff;
+    --nav-link-active-background-color: #24243e;
+    --nav-link-active-border-color: #3c3c5c;
+    --scrollbar-track-color: #24243e;
+    --scrollbar-thumb-color: #4a4e69;
+    --scrollbar-thumb-border-color: #24243e;
+    --navbar-background-color: #20203a;
+    --navbar-text-color: #f0f0f0;
+    --chatbox-background-color: #f8f9fa;
+    --chatbox-text-color: #333;
+    --chatbox-strong-color: #3498db;
+    --chatbox-success-color: #2ecc71;
+    --chatbox-small-color: #95a5a6;
+    --chatbox-delivery-status-color: #e67e22;
+    --chatbox-seen-status-color: #3498db;
+    --chatbox-dark-background-color: #2a2a4a;
+    --chatbox-dark-text-color: #f0f0f0;
+    --chatbox-dark-strong-color: #5f85db;
+    --chatbox-dark-success-color: #2ecc71;
+    --chatbox-dark-small-color: #a0a0a0;
+    --chatbox-dark-delivery-status-color: #f39c12;
+    --chatbox-dark-seen-status-color: #3498db;
+}
+
+
+/* Common Styles */
+.chat-container {
+    height: 80vh;
+}
+
+.user-list {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#chatBox {
+    height: calc(100vh - 230px);
+    overflow-y: auto;
+    background-color: var(--chatbox-background-color);
+    color: var(--chatbox-text-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+.user-item {
+    cursor: pointer;
+}
+
+.user-status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.online {
+    background-color: #28a745;
+}
+
+.offline {
+    background-color: #dc3545;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-mode .card {
+    background-color: var(--card-background-color);
+    border-color: var(--card-border-color);
+}
+
+.dark-mode .card-header {
+    background-color: var(--card-header-background-color);
+    border-bottom-color: var(--card-header-border-color);
+    color: var(--card-header-text-color);
+}
+
+.dark-mode .nav-tabs .nav-link {
+    color: var(--nav-link-color);
+}
+
+.dark-mode .nav-tabs .nav-link.active {
+    color: var(--nav-link-active-color);
+    background-color: var(--nav-link-active-background-color);
+    border-color: var(--nav-link-active-border-color) var(--nav-link-active-border-color) var(--nav-link-active-background-color);
+}
+
+.dark-mode .form-control {
+    background-color: var(--chatbox-dark-background-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark-mode .form-control:focus {
+    background-color: #333333;
+    border-color: #4c4c4c;
+    color: #ffffff;
+}
+
+.dark-mode .form-control::placeholder {
+    color: var(--placeholder-color);
+}
+
+.dark-mode .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: var(--primary-hover-color);
+    border-color: var(--primary-hover-border-color);
+}
+
+.dark-mode .user-item {
+    color: #ffffff;
+}
+
+.dark-mode #chatBox::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dark-mode #chatBox::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+}
+
+.dark-mode #chatBox::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbar-thumb-border-color);
+}
+
+/* Navbar dark mode styles */
+.dark-mode .navbar {
+    background-color: var(--navbar-background-color) !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .navbar-text {
+    color: var(--navbar-text-color) !important;
+}
+
+.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28224, 224, 224, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* #chatBox Dark mode styles */
+.dark-mode #chatBox {
+    background-color: var(--chatbox-dark-background-color);
+    color: var(--chatbox-dark-text-color);
+}
+
+.dark-mode #chatBox strong {
+    color: var(--chatbox-dark-strong-color);
+}
+
+.dark-mode #chatBox .text-success {
+    color: var(--chatbox-dark-success-color) !important;
+}
+
+.dark-mode #chatBox small {
+    color: var(--chatbox-dark-small-color) !important;
+}
+
+.dark-mode #chatBox .delivery-status {
+    color: var(--chatbox-dark-delivery-status-color);
+}
+
+.dark-mode #chatBox .seen-status {
+    color: var(--chatbox-dark-seen-status-color);
+}
+
+.dark-mode #chatBox .message-status {
+    color: var(--chatbox-dark-delivery-status-color);
+}
+
+/* Animation for new messages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

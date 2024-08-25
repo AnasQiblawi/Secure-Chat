@@ -1,0 +1,165 @@
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .card-header {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+}
+
+.dark-mode .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.dark-mode .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.dark-mode #publicKey {
+  background-color: #555;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.dark-mode .form-control {
+  background-color: #555;
+  color: #fff;
+  border-color: #666;
+}
+
+.dark-mode .btn-primary {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+#chatBox {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-item {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+}
+
+.user-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dark-mode .user-item:hover {
+  background-color: #555;
+}
+
+.user-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.user-status.online {
+  background-color: #28a745;
+}
+
+.user-status.offline {
+  background-color: #dc3545;
+}
+
+.delivery-status {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-left: 5px;
+}
+
+.seen-status {
+  font-size: 0.8em;
+  color: #28a745;
+  margin-left: 5px;
+}
+
+.dark-mode .seen-status {
+  color: #5cb85c;
+}
+
+.dark-mode .delivery-status {
+  color: #adb5bd;
+}
+
+.copy-btn {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.dark-mode .copy-btn {
+  color: #fff;
+}
+
+#nprogress .bar {
+  background: #007bff;
+}
+
+.dark-mode #nprogress .bar {
+  background: #0056b3;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #007bff, 0 0 5px #007bff;
+}
+
+.dark-mode #nprogress .peg {
+  box-shadow: 0 0 10px #0056b3, 0 0 5px #0056b3;
+}
+
+.floating-ui-tooltip {
+  z-index: 9999;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.dark-mode .floating-ui-tooltip {
+  background-color: #555;
+}
+
+.dark-mode .accordion-button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .accordion-button::after {
+  filter: invert(1);
+}
+
+.dark-mode .accordion-body {
+  background-color: #333;
+  color: #fff;
+}
+
