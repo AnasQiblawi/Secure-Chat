@@ -280,6 +280,23 @@
     color: var(--chatbox-dark-delivery-status-color);
 }
 
+/* SweetAlert2 Dark Mode */
+.dark-mode .swal2-popup {
+    background-color: var(--card-background-color) !important;
+    color: var(--text-color) !important;
+}
+.dark-mode .swal2-title, 
+.dark-mode .swal2-html-container,
+.dark-mode .swal2-content {
+    color: var(--text-color) !important;
+}
+.dark-mode .swal2-confirm {
+    background-color: var(--primary-color) !important;
+}
+.dark-mode .swal2-cancel {
+    background-color: #6c757d !important;
+}
+
 /* Animation for new messages */
 @keyframes fadeIn {
     from {
