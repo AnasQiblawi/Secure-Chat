@@ -79,7 +79,10 @@
             </div>
             <div class="col-md-9 pb-3">
                 <div class="card h-100">
-                    <div class="card-header" id="chatHeader">Select a user to start chatting</div>
+                    <div class="card-header d-flex justify-content-between align-items-center" id="chatHeaderContainer">
+                        <span id="chatHeader">Select a user to start chatting</span>
+                        <button id="verifyIdentityBtn" class="btn btn-sm btn-outline-info d-none">Verify Identity</button>
+                    </div>
                     <div class="card-body d-flex flex-column">
                         <div id="chatBox" class="flex-grow-1 mb-3"></div>
                         <div id="typingIndicator" class="text-muted small" style="position: absolute; bottom: 75px; left: 25px; "></div>

@@ -71,6 +71,14 @@ class Crypto {
   getPrivateKey() {
     return this.privateKey;
   }
+
+  getFingerprint(publicKey) {
+    if (!publicKey) return 'NO KEY';
+    // Generate a SHA-256 hash of the public key and format it nicely
+    const hash = CryptoJS.SHA256(publicKey).toString(CryptoJS.enc.Hex);
+    // Format into groups of 4 characters, take first 32 chars for readability
+    return hash.substring(0, 32).match(/.{1,4}/g).join(' ').toUpperCase();
+  }
 }
 
 class Messenger {

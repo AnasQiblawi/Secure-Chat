@@ -52,6 +52,7 @@ class MessengerApp {
     $("#logoutBtn").on("click", () => this.handleLogout());
     $("#darkModeToggle").change(() => this.handleDarkModeToggle());
     $("#hideUserToggle").change(() => this.handleHideUserToggle());
+    $("#verifyIdentityBtn").on("click", () => this.showVerifyIdentityModal());
     this.clipboard.on("success", () => this.notyf.success("Copied to clipboard"));
   }
 
@@ -262,6 +263,7 @@ class MessengerApp {
     this.currentRecipient = username;
 
     $('#chatHeader').text(`Chatting with: ${username}`);
+    $('#verifyIdentityBtn').removeClass('d-none');
 
     if (!this.conversations.has(username)) {
       this.conversations.set(username, []);
@@ -462,6 +464,36 @@ class MessengerApp {
     localforage.getItem("userData").then((userData) => {
       userData.isHidden = isHidden;
       localforage.setItem("userData", userData);
+    });
+  }
+
+  showVerifyIdentityModal() {
+    if (!this.currentRecipient) return;
+
+    const recipientPublicKey = this.users.get(this.currentRecipient);
+    const recipientFingerprint = this.messenger.crypto.getFingerprint(recipientPublicKey);
+    const myFingerprint = this.messenger.crypto.getFingerprint(this.messenger.getPublicKey());
+    
+    // Check for dark mode for specific elements
+    const isDarkMode = $("body").hasClass("dark-mode");
+    const containerClass = isDarkMode ? "bg-dark border-secondary" : "bg-light";
+
+    Swal.fire({
+      title: 'Verify Identity',
+      html: `
+        <div class="text-start">
+          <p class="small text-muted mb-2">To verify you are talking to the real <strong>${this.currentRecipient}</strong>, compare their safety number with them via a trusted channel (e.g. phone or in person):</p>
+          <div class="${containerClass} p-2 rounded text-center font-monospace fs-6 mb-3 border text-break">
+              ${recipientFingerprint}
+          </div>
+          <p class="small text-muted mb-2">Your safety number (to share with them):</p>
+          <div class="${containerClass} p-2 rounded text-center font-monospace fs-6 border text-break">
+              ${myFingerprint}
+          </div>
+        </div>
+      `,
+      icon: 'info',
+      confirmButtonText: 'Done'
     });
   }
 
